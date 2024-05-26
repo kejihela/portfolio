@@ -41,34 +41,39 @@
 								<div class="inner">
 
 									<h3 class="major">INSTALLATIONS</h3>
-									<p>Setting up of environment for machine learning operations can sometime be tiring and at the same time it worth it. There are numerous difficulties one can encounter why performing this process. One is conflict in libraries due to supported versions an all of that. Thus, thorough attention is needed for this operation. 
-                                        Depending on the platform one is comfortable with MLOps environments can be set using visual studio code, terminal, cloud platform, code spaces etc. I’m certain we all know what visual studio code is, otherwise, visual studio code can be downloaded from the link below:
-                                        https://code.visualstudio.com/download depending on your operating system. Moving forward, using Linus or Windows terminal, this can be tricky to comprehend but then its look more professional, also, cloud platforms like Amazon Web Service (AWS), Google Cloud Platform (GCP) and Microsoft Azure can be applied for environmental setup for machine learning operations. 
-                                        Let get right into it:
-                                        Linux environment
-                                        Linux operating system is an open-source OS which support user customization and it is unique because of its resistance to attack which implies that it is more secured. For users with window operating system see my blog post on how to instal Linux on your local machine (Link here). 
-                                        From your Linux terminal, download anaconda, you can download anaconda from the following link https://www.anaconda.com/download. You will go ahead and fill in your mail then proceed to download. NOTE: you will copy the Linux download URL and use “wget” to download the software via your Linux terminal.
+									<p>Setting up of environment for machine learning operations can sometime be tiring and at the same time it worth it. There are numerous difficulties one can encounter why performing this process. One is conflict in libraries due to variation in versions and all of that. Thus, thorough attention is needed for this operation. 
+                                        Depending on the platform one is comfortable with MLOps environments can be set using visual studio code, terminal, cloud platform, code spaces etc. I’m certain we all know what visual studio code is, otherwise, visual studio code can be downloaded from the link below depending on your operating system:
+                                        </p>
+                                        <p><b><a href="https://code.visualstudio.com/download">click to download visual studio</a></b></p>
+                                        
+                                        <p> Moving forward, using Linus or Windows terminal, this can be tricky to comprehend but then its look more professional, also, cloud platforms like Amazon Web Service (AWS), Google Cloud Platform (GCP) and Microsoft Azure can be applied for environmental setup for machine learning operations. 
+                                        Let get right into it: </p>
+                                        <p><b>Linux environment</b>
+                                        operating system is an open-source OS which support user customization and it is unique because of its resistance to attack which implies that it is more secured. For users with window operating system see my blog post on how to instal Linux on your local machine (Link here). 
+                                        From your Linux terminal, download anaconda, you can download anaconda from the following link</p>
+                                        <p class="justify"><b><a href="https://www.anaconda.com/download.">click to download anaconda</a></b></p> 
+                                         You will go ahead and fill in your mail then proceed to download. NOTE: you will copy the Linux download URL and use “wget” to download the software via your Linux terminal.
                                         Updating your Linux software is very important in fact it is ideal to update it before downloading any software in your Linux machine. You can simply do this by typing sudo apt update in your linux terminal.
                                         Moving forward, after successful download of your anaconda software you can simply install it by typing bash <name of the software as seen in the download application> then click enter.
-                                        </p>
-
 				
-                                    <p> Proceed to the download of Docker using: sudo apt install docker.io
-                                        Install docker compose
-                                        Proceed to search docker compose github on google search engine. Then click the main repository for docker compose or you can simply click on this link https://github.com/docker/compose. Click on latest from the repository, then proceed to the copy of docker compose url as seen here for linux operating system.
-                                        https://github.com/docker/compose/releases/download/v2.27.1/docker-compose-linux-x86_64
-                                        goto your linux terminal create a folder say “comp” by simply typing
-                                        mkdir comp
+                                    <p class="justify"> Proceed to the download of Docker using: <b>sudo apt install docker.io</b>
+                                        <p><b>Install docker compose</b>
+                                        Proceed to search docker compose github on google search engine. Then click the main repository for docker compose or you can simply click on this link <p><b><a href="https://github.com/docker/compose.">click to download docker compose</a></b></p> 
+                                        Click on latest from the repository, then proceed to the copy of docker compose url as seen here for linux operating system.
+                                        <p><b><a href="https://github.com/docker/compose/releases/download/v2.27.1/docker-compose-linux-x86_64.">copy this link</a></b></p>
+                                        </p>
+                                        <p class="justify">goto your linux terminal create a folder say “comp” by simply typing
+                                        <b>mkdir comp</b>
                                         in your linux terminal. Navigate into the folder by typing
-                                        cd comp
-                                        in your linux terminal. Then proceed to download of your docker compose using
-                                        wget <copied link>
+                                        <b>cd comp</b>
+                                        in your linux terminal. Then proceed to the download of your docker compose using
+                                        <b>wget copied_link </b>
                                         However, to make it executable simply execute the code below in your terminal
-                                        Chmod +x docker-compose
+                                        <b>Chmod +x docker-compose</b>
                                         You can go ahead and confirm your docker installation by simply executing the code below
-                                        Sudo docker run hello-world.
+                                        <b>Sudo docker run hello-world.</b>
                                         Go ahead and create a text file name requirements.txt using
-                                        nano requirements.txt
+                                        <b>nano requirements.txt</b>
                                         edit the file by inserting all the libraries required for your machine learning operations. Libraries like:
                                         pandas
                                         numpy
@@ -78,9 +83,9 @@
                                         scikit-learn
                                         Xgboost
                                         Save the file and confirm it by executing
-                                        Cat requirements.txt
+                                        <b>Cat requirements.txt</b>
                                         In your terminal you can simply install all the modules in the requirement.txt by simply executing
-                                        Pip install -r requirements.txt
+                                        <b>Pip install -r requirements.txt</b>
                                         Following all these steps sequentially you have successfully setup your environment for MLOps and you can start building your models for deployment.
                                         If you can recall you will notice that this tutorial only focuses on terminal installation using Linux terminal. We can also attempt the installation using codespace from GitHub this is kind of better for people with low RAM storage on their local machine as codespace can provide you with upto 16GIG RAM storage. However, I will put you through on how to go about this in the next tutorial.
                                         </p>
