@@ -1,0 +1,169 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Experiment Tracking in machine learning operations</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets3/css/main.css" />
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="experimenttracking.html">Long term deposit</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="blog.html">GoTo Research</a></li>
+			
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="#">
+										<input type="text" name="query" placeholder="Search" />
+									</form>
+								</li>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Search -->
+							<section>
+								<form class="search" method="get" action="#">
+									<input type="text" name="query" placeholder="Search" />
+								</form>
+							</section>
+
+						<!-- Links -->
+							<section>
+								<ul class="links">
+									<li>
+										<a href="#">
+											<h3>Lorem ipsum</h3>
+											<p>Feugiat tempus veroeros dolor</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Dolor sit amet</h3>
+											<p>Sed vitae justo condimentum</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Feugiat veroeros</h3>
+											<p>Phasellus sed ultricies mi congue</p>
+										</a>
+									</li>
+									<li>
+										<a href="#">
+											<h3>Etiam sed consequat</h3>
+											<p>Porta lectus amet ultricies</p>
+										</a>
+									</li>
+								</ul>
+							</section>
+
+						<!-- Actions -->
+							<section>
+								<ul class="actions stacked">
+									<li><a href="#" class="button large fit">Log In</a></li>
+								</ul>
+							</section>
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#">Experiment tracking in machine learning operations</a></h2>
+										  </div>
+									<div class="meta">
+										<time class="published" datetime="2015-11-01">May 31, 2024</time>
+										<a href="#" class="author"><span class="name">Adebayo Abdulganiyu KEJI</span><img src="images/avatar.jpg" alt="" /></a>
+									</div>
+								</header>
+								<span class="image featured"><img src="images/experimenttracking1.png" alt="" /></span>
+                                <p><b>Model management</b></p>
+								<p>Model management is one of the most important process in machine learning operations which involve the tracking of machine learning models, model registry, model versioning, hardware scaling and model deployment. Managing machine learning model components is very important in the development process as it aid easy collaboration among team, reproducibility, organization, optimization, and versioning of models. Now let’s talk about model tracking. There are numerous modules used for managing of models in ML operations, they include: MLflow, Neptune, Comet, Weight and biases s couple of others. However, MLflow is very popular because its an open source which is almost free to use when compared to others. </p>
+                                <p><b>Experiment tracking</b></p>
+                                <span class="image featured"><img src="images/experimenttracking.png" alt="" /></span>
+                                <p>Machine learning model tracking involves the logging of all the key parameters, metrics, model, dataset and many more from the model design to model evaluation. Modern tracking makes tracking easier and reliable when compared to the traditional method which is known as folder system. This system is error prone, doesn’t support versioning and model lineage i.e keeping up with model parameters as number of models increases. </p>
+                                <p>Here, I will demonstrate experiment tracking using MLflow open source platform for machine learning development workflow. There are numerous parameters that can be logged using MLflow during experiment tracking, these include; model artifacts, parameters, tag, performance metrics, and time.</p>
+                                <p><b>Installing MLflow</b></p>
+                                <p>MLflow can simply be install using python pip package:</p>
+                                <p><i>pip install mlflow</i></p>
+                                <p>After installation in the development environment one can start creating runs. With runs one have the ability to log whatever parameters that are needed to be logged. To do this one can easily follow these easy steps:</p>
+                                <p><b>Logging with MLflow</b></p>
+                                <p><i>with mlflow.start_run():</i></p>
+                                <p><i>mlflow.set_tag(“role”, “name of developer”) </i># This is use to collect the details of the    developer i.e the developer role, name and so on. This help during model development among team of data scientists or ml engineers for model documentation.</p>
+                                <p><i>Mlflow.log_param(“learning_rate”, learning_rate) </i># This demonstrate how to log parameters like learning rate, loss function, epoch etc.</p>
+                                <p><i>Mlflow.log_metric(“acc_loss”, acc_loss)</i># This demonstrate how to log the losses encountered during model training and model validation,  one can also log accuracy, precision, recall and F1 score using this function of the mlflow library.</p>
+                                <p><i>Mlflow.log_input(val_data, context= “validation”) </i># This is a sample of how to log a validation dataset using mlflow.</p>
+                                <p>However, all this logging can be done automatically using an MLflow Application Programming Interface (API). </p>
+                                <p><i>Mlflow.autolog()</i># With autolog one can simply log all the necessary information during the training, validation and prediction of the model.</p>
+                                <p><b>MLflow configuration</b></p>
+                                <p>There are three (3) different configurations possible for machine learning development workflow these are; workflow without tracking, remote and local configuration. For the no tracking this can be possible during competition or practicing where one is more concern about the model performance evaluation and not for deployment for business enhancement. The remote configuration involves logging all these variables into the MLflow tracking User Interface (UI), however, this support model versioning and deployment. For the local configuration, this involves the logging of the parameters and artifacts on the local system.</p>
+                                <p>Configuration of MLflow  using either local or remote depend on the developer and this is done by using mlflow API known as sett tracking URI.</p>
+                                <p><i>mlflow.set_tracking_uri(“”)</i></p>
+                                <p>By default when a URI is not set mlflow assume you want to log your parameters and artifacts locally on your system</p>
+                                <p><i>mlflow.set_tracking_uri(“localhost:5000”)</i></p>
+                                <p>However to use a URI as seen above one need to lunch mlflow server locally using:</p>
+                                <p><i>Mlflow server  --bckend-store-uri  sqlite:///backend.db</i></p>
+                                <p>With this one can be able to log all the model parameter and artifacts using mlflow backend server.</p>
+                                
+                                
+                                <footer>
+									<ul class="stats">
+										<li><a href="#">General</a></li>
+										<li><a href="#" class="icon solid fa-heart">28</a></li>
+										<li><a href="#" class="icon solid fa-comment">128</a></li>
+									</ul>
+								</footer>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets3/js/jquery.min.js"></script>
+			<script src="assets3/js/browser.min.js"></script>
+			<script src="assets3/js/breakpoints.min.js"></script>
+			<script src="assets3/js/util.js"></script>
+			<script src="assets3/js/main.js"></script>
+
+	</body>
+</html>
