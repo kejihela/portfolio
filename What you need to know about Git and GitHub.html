@@ -1,0 +1,210 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Creating machine learning operations folder for pipeline development and CI/CD</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets3/css/main.css" />
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="What you need to know about Git and GitHub.html">AI/ML</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="blog.html">GoTo Blog</a></li>
+			
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="#">
+										<input type="text" name="query" placeholder="Search" />
+									</form>
+								</li>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+						<!-- Search -->
+
+						<!-- Links -->
+							<section>
+								<ul class="links">
+									<li>
+										<a href="index.html">
+											<h3>Home</h3>
+											
+										</a>
+									</li>
+									<li>
+										<a href="Research.html">
+											<h3>Research</h3>
+											
+										</a>
+									</li>
+									<li>
+										<a href="MLOps.html">
+											<h3>MLOps</h3>
+											
+										</a>
+									</li>
+									<li>
+										<a href="LLOps.html">
+											<h3>LLOps</h3>
+											
+										</a>
+									</li>
+									
+								</ul>
+							</section>
+
+						<!-- Actions -->
+						
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#">What you need to know about Git and GitHub.</a></h2>
+										  </div>
+									<div class="meta">
+										<time class="published" datetime="2015-11-01">July 8, 2024</time>
+										<a href="#" class="author"><span class="name">Adebayo Abdulganiyu KEJI</span><img src="images/avatar.jpg" alt="" /></a>
+									</div>
+								</header>
+								<style>
+									.center-text {
+										text-align: center;
+									}
+								</style>
+								<div class="center-text">
+								<img src="images/blog7.png" alt="" width="800" height="250" >
+								</div>
+								
+                                <p>Git is a source code management system. Git helps to monitor and manage code for industry standard documentation. Most people confuse Git and GitHub in the sense that they believe it can be used interchangeably but sorry to break it to you that you can’t. As the name implies (Git-Hub), a hub or repository for git. However, git can also be used with other code repositories like BitBucket, GitLab, etc.</p>		<style>
+									.center-text {
+										text-align: center;
+									}
+								</style>
+								<div class="center-text">
+								<img src="images/blog7b.png" alt="" width="300" height="300" >
+								</div>
+							
+							
+								<p>Git is composed of components like local repositories, staging, and commit. Before the introduction of Git people managed their codes locally which didn’t enhance code collaborations and make it difficult for the development of software products. To make a local folder that consists of software files a local repository we need to initialize it by simply typing.</p>	
+								<p><i> git init</i> <br></p>
+                                    
+
+								<p>The above instruction creates a hidden file named .git into the local folder, thus changing to the local repository that git is managing.
+                                After performing the above operation one can be rest assured that one is covered under the umbrella of git for source code management, reproducibility, and monitoring. Once any file is created in the local repository one can then monitor what is happening to the file by stagging it. To stage a file one performs the instructions:</p>
+                                <p><i>git add file_name <b>or</b> git add .</i> <br></p>  
+                                    
+                                    <style>
+									.center-text {
+										text-align: center;
+									}
+								</style>
+								<div class="center-text">
+								<img src="images/blog7c.png" alt="" width="300" height="300" >
+								</div>
+
+								<p>The first instruction help to stage a single file in the directory while the latter is for stagging all the files in the repository.<br>
+                                To check the status of the current local repository one can simply instruct the git by using the instruction
+                            After a file has been staged it needs to be committed for a snapshot of the staged files which is one of the core functions of the git. To do this</p>
+                                <p><i>git status</i> <br>
+                                    git status will show what is happening in the local repository by stating the files that are tracked and not tracked by git, files that are updated and all.<br>
+                                    After a file has been staged it needs to be committed for a snapshot of the staged files which is one of the core functions of the git. To do this</p>  
+								<p>git commit -m “ First commit”<br>
+                                The -m stands for message or tag for git to be able to track the commit though it automatically creates an I.D that looks like a hash key. For every commit, there is always a generated I.d that points to the commit.</p>
+								<p>However, to make the local files or repository available online it is then pushed to the GitHub or any other repository for source code storage. To do this, one must connect her hub account to the Integrated development environment used for code development. This will enable one to make the code accessible online. To do this<br>
+								<i>git push origin main</i> <br></p>
+
+                                <p>Lest I forget we have logging in git. Logging helps to keep track of all the commits made I.e the tracking of all the snapshots made after the commit. To check all the logs during source code management the instruction below is used;<br>
+                                <i>git log</i> <br></p>
+                                <p>One of the most important operations in the git version control system is the ease of collaboration among team members. The git enable each member of the team to work independently on features of software and in the end a software product can be achieved after merging all the software.<br>
+                                The operation used in this case is the branch. The branch command line interface helps to create and list all the branches present in the workspace. The instruction goes as thus;<br>
+                                <i>git branch name_of_branch <b>and</b> git branch </i> <br>
+                                <p>The first instruction creates a working tree directly while the latter list all the branches in the tree.<br>
+                                To switch between branches the instruction below is used;<br>
+
+                                <i>git checkout branch_name </i><br>
+                                After all said are done the branches are merged with the main/master branch with the following set of instructions;<br>
+                                <i>git checkout master</i><br>
+
+                                <i>git merge branch_name</i><br></p>
+                                The above command lines help to turn source codes into a complete software product.</p>
+                                <p>Moving forward there are some other operations in git, this includes stashing, clone, restore and many more.</p> 
+                                <P>I have been able to differentiate between Git and GitHub and also explain the various operations in git version control system/ source code management system.<br>
+                                If you have any questions kindly drop them in the comments section, but for now, I would say Adios…</P>
+
+                                                                    
+
+								
+
+
+
+
+
+								
+									
+
+
+									
+                                
+                                <footer>
+									<ul class="stats">
+										<li><a href="#">General</a></li>
+										<li><a href="#" class="icon solid fa-heart">28</a></li>
+										<li><a href="#" class="icon solid fa-comment">128</a></li>
+									</ul>
+								</footer>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets3/js/jquery.min.js"></script>
+			<script src="assets3/js/browser.min.js"></script>
+			<script src="assets3/js/breakpoints.min.js"></script>
+			<script src="assets3/js/util.js"></script>
+			<script src="assets3/js/main.js"></script>
+
+	</body>
+</html>
