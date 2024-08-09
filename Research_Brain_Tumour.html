@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Detection of brain tumors from a computed tomographic - magnetic resonance imagery using segmentation deep learning technique.</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets3/css/main.css" />
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="Index.html">Home</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="Research.html">Back</a></li>
+			
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="#">
+										<input type="text" name="query" placeholder="Search" />
+									</form>
+								</li>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+					
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#">Detection of brain tumors from a computed tomographic - magnetic resonance imagery using segmentation deep learning technique.</a></h2>
+										<p>Adebayo Abdulganiyu KEJI ||  Nnamdi Bobby Nwaekwu </p>
+                                        </div>
+									<div class="meta">
+										<time class="published" datetime="2015-11-01">June 3, 2024</time>
+										<a href="#" class="author"><span class="name">Adebayo Abdulganiyu KEJI</span><img src="images/avatar.jpg" alt="" /></a>
+									</div>
+								</header>
+								<div class="center-text">
+                                    <img src="images/brainTumor.jpg" alt="" width="500" height="400" >
+                                    </div>
+                                <p><b>Abstract</b></p>
+								<p>The leading cause of cancer death in children and adults under 40 is brain tumors [1]. A primary brain tumor affects more than 12,000 individuals a year, including 500 children and teenagers; that's 33 people every day. Brain imaging technology continues to be at the forefront of developments in both comprehension of the brain and the capacity to identify and treat brain diseases and illnesses [2]. The automated triage of imaging scans using computer algorithms has the potential to identify brain tumors earlier with high degree of precision and accuracy thereby improving therapeutic outcomes. In this study, we propose the use of hybrid segmentation model known as SegUnet which has the capacity to address the issue of small size tumors getting lost during down sampling to train an MRI-CT cross modality dataset. In addition to this, we research on the effectiveness of filter size in the segmentation of medical images. However, we implemented three different SegUnet models with modification on filter size. We employed size 2, 3 and 4 to test the efficiency of filter on medical image segmentation. The report of the result shows that the model with filter size of 2 and size of 3 almost have the same evaluation results in terms of mean pixel accuracy, global accuracy, IOU and frequency weighted IU while model with filter size of 4 is relatively lesser in metrics compared to the others. Also, looking closely at the training and loss plot of the respective filters it could be noted that the model of filter size 3 loss plot was stable and decreases steadily while the others are in zig-zag pattern or better put as unstable. More so, the training plot of filter size 3 was reasonably stable compared to the other two models. Thus, we conclude that our model with filter size of 3 performed better compared to the other two models and [3] model in terms of generalization as we used two different image modalities for the training of our model.</p>
+								<p><b>Methodology</b></p>
+                                <p>This introduces the methodology that was utilized to carry out the study for this thesis, along with the dataset, the experiment's workflow, and the evaluation criteria.</p>
+                                <style>
+									.center-text {
+										text-align: center;
+									}
+								</style>
+                                <div class="center-text">
+                                    <img src="images/brainTumor_method.jpg.png" alt="" width="500" height="400" >
+                                    </div>
+                                 <p><b>Conclusion</b></p>
+                                 In this study, we proposed the use of a hybrid segmentation model known as SegUnet. The reason why we propose the use of this model in our study was because of the capability of the model to address the issue of small size tumors getting lost during down sampling, which results in inappropriate segmentation as seen in [3]. While studies like [3] have employed the use of this model in developing brain tumor segmentation using MRI images no study have employed the use of two or more modalities in training the model. Thus, we employed the use of MRI-CT image modalities from the just released dataset seen in [20] to train our SegUnet hybrid segmentation model. In addition to this we research on the effectiveness of filter size in the segmentation of medical images. However, we implemented three different SegUnet model with modification on filter size. We employed size 2, 3 and 4 to test the efficiency of filter on medical image segmentation. We obtained 99.09% for mean pixel accuracy, a global accuracy of 95.22%, IOU of an 83.94% and 98.47% of frequency weighted UI for model with filter size of 2 and obtained 99.14% for mean pixel accuracy, a global accuracy of 94.62%, IOU of an 83.47% and 98.51% of frequency weighted UI for model with filter size of 3 while for model with filter size of 4 we obtained 98.74% for mean pixel accuracy, a global accuracy of 94.40%, IOU of an 80.05% and 97.90% of frequency weighted UI. It could be deduced from the report of the result that the model with filter size of 2 and size of 3 almost have the same evaluation results in terms of mean pixel accuracy, global accuracy, IOU and frequency weighted IU while model with filter size of 4 is relatively lesser in metrics compared to the others. Also, looking closely at the training and loss plot of the respective filters it could be noted that the model of filter size 3 loss plot was stable and decreases steadily while the others are in zig-zag pattern or better put as unstable. More so, the training plot of filter size 3 was reasonably stable compared to the other two models. Thus, we could conclude that our model with filter size of 3 performed better compared to the other two models and [3] model in terms of generalization as we used two different image modalities for the training of our model.  
+                                 <div class="center-text">
+                                    <img src="images/brain_tumor_plot.png" alt="" width="500" height="400" >
+                                    </div>
+									<div class="center-text">
+										<img src="images/brain_tumor_prediction.png" alt="" width="500" height="400" >
+										</div>
+                                 <footer>
+									<ul class="stats">
+										<li><a href="#">General</a></li>
+										<li><a href="#" class="icon solid fa-heart">28</a></li>
+										<li><a href="#" class="icon solid fa-comment">128</a></li>
+									</ul>
+								</footer>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets3/js/jquery.min.js"></script>
+			<script src="assets3/js/browser.min.js"></script>
+			<script src="assets3/js/breakpoints.min.js"></script>
+			<script src="assets3/js/util.js"></script>
+			<script src="assets3/js/main.js"></script>
+
+	</body>
+</html>
