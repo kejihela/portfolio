@@ -1,0 +1,121 @@
+<!DOCTYPE HTML>
+<!--
+	Future Imperfect by HTML5 UP
+	html5up.net | @ajlkn
+	Free for personal and commercial use under the CCA 3.0 license (html5up.net/license)
+-->
+<html>
+	<head>
+		<title>Segmentation of solar filaments from h-alpha images using deep neural network with adaptive training method.</title>
+		<meta charset="utf-8" />
+		<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
+		<link rel="stylesheet" href="assets3/css/main.css" />
+	</head>
+	<body class="single is-preload">
+
+		<!-- Wrapper -->
+			<div id="wrapper">
+
+				<!-- Header -->
+					<header id="header">
+						<h1><a href="Index.html">Home</a></h1>
+						<nav class="links">
+							<ul>
+								<li><a href="Research.html">Back</a></li>
+			
+							</ul>
+						</nav>
+						<nav class="main">
+							<ul>
+								<li class="search">
+									<a class="fa-search" href="#search">Search</a>
+									<form id="search" method="get" action="#">
+										<input type="text" name="query" placeholder="Search" />
+									</form>
+								</li>
+								<li class="menu">
+									<a class="fa-bars" href="#menu">Menu</a>
+								</li>
+							</ul>
+						</nav>
+					</header>
+
+				<!-- Menu -->
+					<section id="menu">
+
+					
+
+					</section>
+
+				<!-- Main -->
+					<div id="main">
+
+						<!-- Post -->
+							<article class="post">
+								<header>
+									<div class="title">
+										<h2><a href="#">Segmentation of solar filaments from h-alpha images using deep neural network with adaptive training method.</a></h2>
+										<p>Adebayo Abdulganiyu KEJI ||  Hadiza KOKO </p>
+                                        </div>
+									<div class="meta">
+										<time class="published" datetime="2015-11-01">June 15, 2024</time>
+										<a href="#" class="author"><span class="name">Adebayo Abdulganiyu KEJI</span><img src="images/avatar.jpg" alt="" /></a>
+									</div>
+								</header>
+								<div class="center-text">
+                                    <img src="images/solarfilament.jpeg" alt="" width="500" height="400" >
+                                    </div>
+                                <p><b>Abstract</b></p>
+								<p>The Sun, the nearest star to Earth, not only provides the necessary heat and light for life on Earth, but it also exhibits a variety of intriguing phenomena that are initially seen with the unaided eye and eventually become apparent through telescopes [2]. Being an active star, the sun undergoes cyclic changes that are linked to periodically occurring activity phenomena that may be seen on the surface of the sun. Solar storms and their effects on the heliosphere, other planets, and the area around Earth are the main topics of study for space weather. Over the course of several days, filaments' appearance may fluctuate, but eventually they vanish. Strong coronal mass ejections (CME) that could interfere with satellites, aviation communications, long metallic oil pipelines, and electrical distribution grids could be the outcome of their departure. By precisely predicting those disturbances and their effects, we can get ready for their arrival. In this study, we proposed the use of Unet segmentation model to identify solar filaments in H-alpha full disk solar images. We developed four models with different optimizers and updating rates for the learning rate. As a result, the model using the Adam, Adamax, RMSProps, and Nadam optimizers was put into practice. We evaluate these models using True Positive Rate (TPR), False Positive Rate(FPR) and Dice Score Coefficient (DSC). The significance of using adaptive learning rate was highlighted in Zhu et al.'s study [26] as it was recommended for future work on the detection of solar filament in order to reduce the possibility of the network approaching local optimum. Their research produced a TPR of 91.45%, indicating the necessity of applying adaptive learning rate. As a result, this contributed to our amazing findings, which included a greater TPR with DCS but a lower FPR in comparison to the study of Zhu et al.</p>
+								<p><b>Methodology</b></p>
+                                <p>This introduces the methodology that was utilized to carry out the study for this thesis, along with the dataset, the experiment's workflow, and the evaluation criteria. The BBSO dataset was extracted from the repository. This dataset was preprocessed by sighting to remove duplicates copy of dataset to avoid using the same image as both training and validation.  We also augment the datasets to increase the total number since we are dealing with deep neural network that require enormous number of dataset for training. The dataset was however splits into training, validation and test set. This enabled us to train our U-net model with the training dataset, validate with the validation dataset and test our developed model with the test set. The model was trained using four different adaptive learning rate. This is done in order to obtain an obtain an optimized model with high performance characteristics Model are needed to be evaluated to know the performance capability of the developed model. Thus we employed the state of the art performance metrics which are: True positive rate, False positive rate and dice score coefficients. The figure below display the methodology framework used for our research study.</p>
+                                <style>
+									.center-text {
+										text-align: center;
+									}
+								</style>
+                                <div class="center-text">
+                                    <img src="images/solarfilament_method.png" alt="" width="500" height="400" >
+                                    </div>
+                                 <p><b>Conclusion</b></p>
+                                 Analyzing our solar system is the first step in comprehending the rest of the universe, which can be accomplished by observing, exploring, and finally understanding it. The Sun, the nearest star to Earth, not only gives life on Earth its necessary heat and light, but it also displays a range of fascinating phenomena, first visible to the human eye and later visible through telescopes [2].Sun, being an active star, it experiences cyclic changes that are connected to more or less often recurring activity phenomena seen at the surface of the sun. The study of space weather is primarily concerned with solar storms and how they affect the heliosphere, other planets, and the region around Earth. The appearance of filaments may change over the course of several days, but eventually they disappear. The result of their departure could be powerful coronal mass ejections (CME) which could cause disruptions like interference with satellites, communications on aircraft, long metallic oil pipelines, and electrical distribution grids. We can prepare for their coming by accurately forecasting those disturbances and their impacts [11]. In this study, we proposed the use of a segmentation model known as Unet for the detection of solar filament from Hα full disk solar images. We implemented four models with variation in the optimizer and rate at which the learning rate were updated. Thus, the model with Adam, Adamax, RMSProps and Nadam optimizers were implemented. The model with Adamax gave the best performance with a true positive rate of 96.48%, false positive rate of 0.8%, dice coefficient of 89.69%, the Nadam optimizer gave a true positive rate of 93.61%, false positive rate of 0.6%, dice coefficient of 88.22%, the RMSProp gave a true positive rate of 98.54%, false positive rate of 1.4%, dice coefficient of 43.07%, while Adam gave a true positive rate of 97.53%, false positive rate of 1.0%, dice coefficient of 49.00%. Though Adam gave the highest true positive rate among the models but with a high false positive rate and a very low dice coefficient. As important as the TPR so is the FPR. Thus with Adamax we obtained a high TPR coupled with a high dice coefficient score and a very low FPR. However, in the work of  Zhu et al, [26] the important of application of  adaptive learning rate was emphasized as it was suggested for the future work on the detection of solar filament so as to eliminate the risk of the network entering local optimum. Their work gave a TPR of 91.45% which premeditate the importance of application of adaptive learning rate. Thus, this lead to our remarkable results to obtain a very high TPR with DCS but low FPR compared to the work of Zhu et al..  
+                                 <div class="center-text">
+                                    <img src="images/solar_plot.png" alt="" width="500" height="400" >
+                                    </div>
+									<div class="center-text">
+										<img src="images/solar_prediction.png" alt="" width="500" height="400" >
+										</div>
+                                 <footer>
+									<ul class="stats">
+										<li><a href="#">General</a></li>
+										<li><a href="#" class="icon solid fa-heart">28</a></li>
+										<li><a href="#" class="icon solid fa-comment">128</a></li>
+									</ul>
+								</footer>
+							</article>
+
+					</div>
+
+				<!-- Footer -->
+					<section id="footer">
+						<ul class="icons">
+							<li><a href="#" class="icon brands fa-twitter"><span class="label">Twitter</span></a></li>
+							<li><a href="#" class="icon brands fa-facebook-f"><span class="label">Facebook</span></a></li>
+							<li><a href="#" class="icon brands fa-instagram"><span class="label">Instagram</span></a></li>
+							<li><a href="#" class="icon solid fa-rss"><span class="label">RSS</span></a></li>
+							<li><a href="#" class="icon solid fa-envelope"><span class="label">Email</span></a></li>
+						</ul>
+						<p class="copyright">&copy; Untitled. Design: <a href="http://html5up.net">HTML5 UP</a>. Images: <a href="http://unsplash.com">Unsplash</a>.</p>
+					</section>
+
+			</div>
+
+		<!-- Scripts -->
+			<script src="assets3/js/jquery.min.js"></script>
+			<script src="assets3/js/browser.min.js"></script>
+			<script src="assets3/js/breakpoints.min.js"></script>
+			<script src="assets3/js/util.js"></script>
+			<script src="assets3/js/main.js"></script>
+
+	</body>
+</html>
